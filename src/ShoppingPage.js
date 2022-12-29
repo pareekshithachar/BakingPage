@@ -19,25 +19,28 @@ const ShoppingPage = () => {
     });
     tempshoppingItems.push({
       name: "Donuts",
-      description: "Item 2 Description",
+      description:
+        "Donuts are one of the most famous kinds of cake around the world, Buy our special donuts NOW",
       photoUrl:
-        "https://images.unsplash.com/photo-1551024601-bec78aea704b?ixlib=rb-4.0.3&w=1080&fit=max&q=80&fm=jpg&crop=entropy&cs=tinysrgb",
+        "https://sugargeekshow.com/wp-content/uploads/2020/10/baked_donut_recipe_featured.jpg",
       price: "6 $",
       count: 1,
     });
     tempshoppingItems.push({
-      name: "Item 3",
-      description: "Item 3 Description",
+      name: "Carrot Halva",
+      description:
+        "One of Indias finest delicacy, irresistable, with the perfect amount of sugar",
       photoUrl:
-        "https://upload.wikimedia.org/wikipedia/commons/0/04/Pound_layer_cake.jpg",
-      price: "6 $",
+        "https://www.cookingcarnival.com/wp-content/uploads/2014/11/Gajar-halwa-3.jpg",
+      price: "4 $",
       count: 1,
     });
     tempshoppingItems.push({
-      name: "Item 4",
-      description: "Item 4 Description",
+      name: "Gualb Jamun",
+      description:
+        "Gulab jamun are soft delicious berry sized balls made with milk solids, flour & a leavening agent",
       photoUrl:
-        "https://upload.wikimedia.org/wikipedia/commons/0/04/Pound_layer_cake.jpg",
+        "https://rakskitchen.net/wp-content/uploads/2021/09/gulab-jamun.jpg",
       price: "10 $",
       count: 1,
     });
@@ -89,7 +92,7 @@ const ShoppingPage = () => {
   return (
     <>
       <div className="container">
-        <div className="row">
+        <div className="row ">
           {shoppingItems.map((item, index) => {
             return (
               <div className="card w-25">
@@ -120,7 +123,13 @@ const ShoppingPage = () => {
         </div>
       </div>
       <div>
-        <button onClick={() => console.log(cartItems)}>Checkout</button>
+        <button
+          type="button"
+          className="btn btn-primary"
+          onClick={() => console.log(cartItems)}
+        >
+          Checkout
+        </button>
       </div>
     </>
   );
